@@ -1,0 +1,6 @@
+
+Go Through the link Learn from it and try to develop application
+git gub referance for development 
+
+
+https://github.com/thecoducer/restaurant-order-management-system
