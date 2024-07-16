@@ -1,0 +1,33 @@
+/* AdminCtrlComp.css */
+.admin-container {
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table .actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-primary {
+    margin-right: 5px;
+}

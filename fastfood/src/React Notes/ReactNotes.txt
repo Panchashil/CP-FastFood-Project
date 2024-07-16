@@ -1,0 +1,328 @@
+18 / 06 / 2024
+
+Q. what is React ?
+    - it is javascript Library.
+    - it is use to createrich UI.
+    - it create single page application(SPA).
+    - is not a FrameWork.
+    - latest version 18.
+ - React work on component Basis
+ - in React Root Component Name is App.js
+
+
+* Techonology you must know
+    - HTML , CSS JS(basic js, ES5  & ES6 , oops)
+    -s/w pre-request
+    -nodejs
+    -npm-editor
+
+* there are two ways to create React Project
+    1. by npx :   in this case no need to install configuration file
+        step1 : - npx create-react-app appname
+        step2 : - cd appname
+        step3 : - npm start
+
+    2. by npm :   IN THIS case we need to install configuration file
+        step1 : - npm install create-react-apps
+        step2 : - cd appname
+        step4 : - npm start
+
+
+Q. what is Componenets ?
+    - it is Partial Part of React Project
+    - it can be any part of Project.
+    - which we can reuse.
+
+Q. Types of Components ?
+    1. Function Components  : when your main goal is create UI
+    2. Class Components     : when you need to deal with essential data and need to write complex logic in that case we use it.
+
+Q. How to display Individual Component output ?
+    
+    *props(property) : 
+        - it is parameter or functional parameter which is use to pass data inside components
+        - props return data in object formate.
+        - in function component we can access props like props.propsName.
+        - in function component we can access props like this.props.propsName.
+
+Q. What is JSX(Javascript XML)?
+    - it makes React code easy and allows us to write html code in react component.
+    - in jsx we have to write one parent element to wrap another child element, parent element can be any block element 
+
+Q. What States in Class Component ?
+    - States in Class Componenets is use to handel essential data.
+    - in Class component we write state in constructor 
+    - state return us object type of data
+    - we can access data outside state by writing this.state.propertyname
+
+    - setState() : it allows us to manipulate state property value.
+
+Q. Destructuring of state and props ?
+    -   const {company,salary} = this.state;
+    -   const {myName,post} = this.props;
+
+
+craete a class components with name MyDetails containing props fname,lname,email,contact as well we state with property gender , material status addres and display is data on browser
+
+Q. Method And Event 
+    - use define Method
+    - events : onClick
+             : onMouseOver
+
+Q. Condition Rendering ?
+    Rendering : display component output or view on browser.
+    - conditional Rendering : display component output on the basis of Condition
+
+    1. if else                  : if the condition is true if block will render otherwise else block render
+
+    2. element as variable      : in this we store dtata in variable and return that variable as element 
+
+    3. use of ternary operator  : it is an shorthand of if else.
+                        syntax  : condition ? true : false;
+
+    4. use of short-circut      : in this if condition is true then and only then it will return output.
+                                - it is denoted by &&.
+
+    ConditionRenderingComp class Componenets
+
+    * How to display Image in react Component
+    * How to create constant file to static data with component
+
+    task1 : toggle Image when we click on 
+    task2 : 
+
+
+
+Q. Component Interaction 
+    - Fetching Data from parent component to child component.
+    - How to make parent child relation between two component.
+    - to make parent child replation in between component for that we import child component in parent and write child component name as tage in parent component
+
+*Send state Data as Props to child Component
+*Send Method Data as Props to child Component
+
+*We saw snipt for creating component
+rce : for creating Component
+rconst : create constructure 
+
+
+rfce : it will generate normal function component 
+rafce : it will generate Arrow Function Component
+
+    to Build executable file
+    npm build
+
+
+==================================================================================================================
+
+19 / 6 / 24
+
+Fragment or React.Fragment  :
+    - it is an alternative for jsx, which removes unwanded element from react Project
+    - to use we have to import it from react Library.
+
+Q. How to use Css in react ?
+    1. inter css : we can write css inside component.
+    2. external css : in this we create a seperate css file and that cs file we import in component 
+    3. module css : if you have to write css property for a seperate component for that we use it
+                    - we can create module css file by filename.module.css
+                    - then we have to import it in component
+
+
+Q. HOC (Heigher Order Component) :
+    - when we have common bussiness logic and want to share with multiple component for that we use it .
+    - in hoc we can share data from function component to other component.
+    - in hoc we pass other function as parameter
+
+Q. How to use Bootstrap in React ?
+    - it  provide inbuilt classes to make webapp attractive responce
+    1. npm i bootstrap : this will istall Bootstrap locally 
+    2. IMPORT IT IN index.js
+    3. use its classes in react component
+
+Q. How to use Material UI (MUI) ?
+    - it is an external library which provide inbuilt component to react.
+    - it makes react app attractive, responsive
+    - its official website mui.com 
+    - https://mui.com/material-ui/getting-started/installation/
+
+    command to install Matrial UI
+        -- npm install @mui/material @emotion/react @emotion/styled
+    command to install Material ui Interaction
+        -- npm install @mui/icons-material
+    
+        -- npm i react-swipeable-views --legacy-peer-deps
+
+
+Q. Routing in React .
+    - navigate of component
+    - display component output by writting it pathname in browser url 
+    - to perform        
+
+
+    -npm i react-router-dom --legacy-peer-deps
+
+Q. Types Of Routing ?
+    1. naming routing : display component ooutput by writting its path name in browser url
+    2. deefault routing : display component output without writtin gpath in browser url
+    3. parameterize routing : passing parameter with routing path and display component output.
+    4. child routing :
+    5 wild-card routing :display component output when user enter wrong path 
+                        - it is denoted bt *.
+                        - it must be last page  
+
+
+
+===============================================================================================================
+20 / 6 / 24
+
+Q. Virtual DOM :
+    - in React insted of manipulating browser dom directly react create virtual dom in its memory, 
+        where it does all necessary changes in it, and virtual dom changes thats need to be change 
+
+Q. Hooks In React ?
+    - it allows us to use class component feature in function component.
+    - hooks introduce in react version-16
+
+    Rules to use Hooks  
+        - Hooks work only with function component.
+        - Hooks always use at top level component.
+        - Hooks can't be render Conditionally
+
+Q. List Of Hooks ?
+    1. useState Hook     : it allows us to use State in function component
+                         - it gives two values 
+                            1. current State
+                            2. function-to-update-state
+                            -before use first we have to import from react library
+
+    2. useEffect Hook    : it only execut only after class render or functon return 
+                         - it is use to perform sideeffect opertation in function component after render of it 
+                         - it takes two parameter in it , 
+                         - sideeffect means what, fetching data from server, use of timer
+                         - it execut once after component render. 
+                            1. Callback function,
+                            2. dependency
+                            - we have to import it from react library before use of it.
+                    syntax : (useEffect(()=> {},dependency));
+
+                case 1 : when no dependency value pass, it will execute after every render
+
+                case 2 : when we want to execute useEffect Only once render
+                - in this we pass dependency value as blanck array.
+                syntax : (useEffect() => {, []})
+
+                case 3 : when we want to execute useEffect hook as our choice.
+                - to perform this we have state or props as dependency value.
+                - as state or prop value change then useEffect will execute.
+                syntax : (useEffect() => {, [state or props]})
+
+    3. useContect Hook   :
+    4. useRef Hook       :
+    5. useReducer Hook   :  
+    6. useMemo Hook      :
+    7. useCallback Hook  :
+    8. custome Hook      :
+
+
+    Q. Form Validation
+        REST Fake application
+        create json file with data and uplod it on json server
+        cd src/database json-server --watch -p 8888 db.json
+
+        install AXIOS library : it will allows to make request to server from react library.
+     ** - npm i axios --legacy-peer-deps
+
+
+=========================================================================================================================
+
+
+Q. Local Stroage
+    localStorage.setItem("user1","Ajith")   // it is use to store data on local Stroage
+    localStorage.getItem("user1")           // it is use to get user value from local Stroage
+    localStorage.clear()                    // it is use to delete all the data from localStorage
+    localStorage.removeItem("user1")        // it is use to single data from local 
+
+    same as sessionStorage
+
+
+Q. What is Redux >
+    - it is predictable state container for javascript app
+    - it is use to store track and manage state from javascript app.
+
+    - redux work on three 3 core principle 
+        1. Store    : it is use to store state(data) in it. 
+
+        2. Action   : it is description of operation which we are going to perform.
+                    - it is plain javascript object, having type property containing string constant value in it.
+
+        3. Reducer  : it actually carry out state transistion depending on store and action 
+                    - getState(); it will return status of state
+                    - dispatch(); it will call action 
+
+it will create json.package file
+    - npm init
+    or 
+    - npm init -y
+
+it will install redux
+    - npm i redux
+
+Q. we use redux-toolkit in react Project
+    - npm install @reduxjs/toolkit
+
+Q. we use react-redux library
+    - npm install react-redux
+
+
+
+render-props => class components to function component
+
+
+lifecycle
+    mounting
+    update
+    unmouting
+    errorphase
+
+
+
+it will create json.package file
+    - npm init
+    or 
+    - npm init -y
+
+it will install redux
+    - npm i redux
+
+Q. we use redux-toolkit in react Project
+    - npm install @reduxjs/toolkit
+
+Q. we use react-redux library
+    - npm install react-redux
+
+
+        install AXIOS library : it will allows to make request to server from react library.
+     ** - npm i axios --legacy-peer-deps
+
+       create json file with data and uplod it on json server
+        cd src/database json-server --watch -p 8888 db.json
+
+
+ - https://mui.com/material-ui/getting-started/installation/
+
+    command to install Matrial UI
+        -- npm install @mui/material @emotion/react @emotion/styled
+    command to install Material ui Interaction
+        -- npm install @mui/icons-material
+    
+        -- npm i react-swipeable-views --legacy-peer-depsnpm install react-bootstrap
+
+
+
+
+
+    =======================================================================================================
+
+    React Project
+    landing page - about us, home, contact us

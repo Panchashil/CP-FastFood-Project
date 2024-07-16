@@ -1,0 +1,97 @@
+/* Container styles */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/premium-photo/table-full-food-including-variety-dishes-including-salad-bread-salad_901275-3068.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Form styles */
+.registration-form {
+    border: 5px solid black;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    width: 400px;
+    animation: fadeIn 1s ease-in-out, blinkShadow 2s infinite;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Blinking box shadow animation */
+@keyframes blinkShadow {
+    0%, 100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Label styles */
+.form-label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input styles */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.btn:active {
+    background-color: #003f7f;
+}

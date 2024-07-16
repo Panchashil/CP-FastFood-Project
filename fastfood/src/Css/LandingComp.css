@@ -1,0 +1,257 @@
+
+.App {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  padding: 20px 0;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.navbar {
+  padding: 15px;
+  background-color: #f8f9fa !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.navbar-nav .btn {
+  font-size: 18px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section h2,
+section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.promo-section {
+  text-align: center;
+}
+
+.promo-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.promo-section p {
+  font-size: 1.25rem;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body .text-warning {
+  font-size: 1.5rem;
+}
+
+.footer-section {
+  background-color: #343a40;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-section .contact-info {
+  font-size: 1rem;
+}
+
+.footer-section .contact-info p {
+  margin-bottom: 15px;
+}
+
+.footer-section .social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  header .container {
+    padding: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  .navbar-nav .btn {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  section h2,
+  section h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .promo-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .promo-section p {
+    font-size: 1rem;
+  }
+
+  .card-body .text-warning {
+    font-size: 1.25rem;
+  }
+
+  .footer-section {
+    padding: 20px 0;
+  }
+
+  .footer-section .contact-info p {
+    margin-bottom: 10px;
+  }
+
+  .footer-section .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  header .container {
+    padding: 5px 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+
+  .navbar-nav .btn {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+
+  section h2,
+  section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-size: 0.75rem;
+  }
+
+  .promo-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .promo-section p {
+    font-size: 0.875rem;
+  }
+
+  .card-body .text-warning {
+    font-size: 1rem;
+  }
+
+  .footer-section {
+    padding: 10px 0;
+  }
+
+  .footer-section .contact-info p {
+    margin-bottom: 5px;
+  }
+
+  .footer-section .social-icons img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.footer-section {
+  padding: 20px;
+  background-color: #f8f9fa; 
+}
+
+.footer-section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section > div > div {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  color: black;
+  margin-top: 201PX; 
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.social-icons img {
+  margin-right: 10px;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.merchant-image {
+  width: 100%;
+  height: auto;
+}

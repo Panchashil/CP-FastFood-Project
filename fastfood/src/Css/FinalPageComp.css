@@ -1,0 +1,57 @@
+/* FinalPageComp.css */
+
+.final-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://www.pirenko-themes.com/pulsepreviews/wp-content/uploads/sites/4/2015/10/pulse-restaurant.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .final-page-content {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .final-page-content h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .final-page-content p {
+    margin-bottom: 40px;
+  }
+  
+  .back-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+   float: left;
+  }
+
+  .home-button{
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+   float: right;
+
+  }
+  
+  .back-button:hover {
+    background-color: #e64a19;
+  }
+
+  
+  

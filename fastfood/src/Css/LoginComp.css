@@ -1,0 +1,44 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/hd/e763b865539559.5af831e60e41a.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background-color: rgba(255, 255, 255, 0.5); /* Increased transparency */
+    border: 5px solid black;
+    height: 514px;
+    width: 100%; /* Ensure the login box takes full width */
+    max-width: 400px; /* Adjust as needed */
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px rgba(139, 69, 19, 0.7) !important; /* Increased shadow and opacity */
+    opacity: 0.9;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-avatar {
+    margin: 1rem;
+    background-color: #f50057; /* Replace with your desired background color */
+}
+
+.login-error {
+    color: red;
+}
+
+.login-link {
+    margin-top: 5rem;
+}

@@ -1,0 +1,73 @@
+/* src/components/FoodCard.css */
+.food-card {
+    display: flex;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    width: 300px;
+  }
+  
+  .food-card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .food-card-content {
+    padding: 20px;
+  }
+  
+  .food-card-content h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .food-card-reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .food-card-social i {
+    margin-left: 10px;
+  }
+  
+  .food-card-options {
+    margin: 20px 0;
+  }
+  
+  .food-card-options label {
+    margin-right: 10px;
+  }
+  
+  .food-card-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .food-card-buttons button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .food-card-buttons button:hover {
+    background-color: #c0392b;
+  }
+
+  .registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/pizza/pizza-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
