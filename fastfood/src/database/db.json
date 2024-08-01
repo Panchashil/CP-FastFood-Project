@@ -249,63 +249,79 @@
       "userName": "admin",
       "userContact": "1234567890",
       "userId": "admin@gmail.com",
-      "userPass": "admin@123"
-    },
-    {
-      "id": "2",
-      "userName": "hr",
-      "userContact": "1234567856",
-      "userId": "hr@gmail.com",
-      "userPass": "hr@123"
+      "userPass": "admin@123",
+      "cartItems": [
+        {
+          "id": "4",
+          "image": "https://th.bing.com/th/id/OIP.Eo7Pgk37fnSEnGm8hRJkKwHaEo?w=292&h=182&c=7&r=0&o=5&pid=1.7",
+          "fname": "Mediterranean Delight",
+          "fdesc": "A taste of the Mediterranean with sun-dried tomatoes, olives, feta cheese, and a blend of herbs on a fluffy garlic-infused crust.",
+          "price": "₹350-450"
+        },
+        {
+          "id": "10",
+          "image": "data:image/jpeg;base64,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",
+          "fname": "Spiccy Pizza",
+          "fdesc": "Awsome",
+          "price": "500"
+        }
+      ]
     },
     {
       "id": "3",
       "userName": "user",
       "userContact": "1234567889",
       "userId": "user@gmail.com",
-      "userPass": "user@123"
+      "userPass": "user@123",
+      "cartItems": [
+        {
+          "image": "https://th.bing.com/th/id/OIP.cHarsWSdDEwGtCnQcFMEQQHaEo?w=298&h=185&c=7&r=0&o=5&pid=1.7",
+          "fname": "Aloo Tikki Chaat",
+          "fdesc": "Spicy potato patties (aloo tikki) served with tangy tamarind chutney, yogurt, chopped onions, and sev.",
+          "price": " ₹50-70 ",
+          "id": "4"
+        }
+      ]
     },
     {
       "id": "9ec3",
       "userName": "Ajith Kumar",
       "userContact": "9380410103",
       "userId": "ajith619006@gmail.com",
-      "userPass": "123456789"
+      "userPass": "Ajith@123",
+      "cartItems": [
+        {
+          "id": "1",
+          "image": "https://th.bing.com/th/id/OIP.qdnVol1QcxmUErUU08kh_gHaFj?w=249&h=187&c=7&r=0&o=5&pid=1.7",
+          "fname": "Virgin Mojito",
+          "fdesc": "A refreshing blend of fresh mint leaves, lime juice, sugar, and soda water, served over crushed ice.",
+          "price": "₹100-150"
+        }
+      ]
     },
     {
       "id": "8022",
       "userName": "ajith",
       "userContact": "789",
       "userId": "ajith@gmail.com",
-      "userPass": "123"
+      "userPass": "Ajith@123",
+      "cartItems": []
     },
     {
-      "id": "f108",
-      "userName": "Ajith Kumar",
-      "userContact": "938041013",
-      "userId": "ajith@gmail.com",
-      "userPass": "Ajith@02"
+      "id": "a6e9",
+      "userName": "prasanth",
+      "userContact": "9874566321",
+      "userId": "prasanth@gmail.com",
+      "userPass": "prasanth@123",
+      "cartItems": []
     },
     {
-      "id": "62ae",
-      "userName": "Ajith Kumar",
-      "userContact": "9380410103",
-      "userId": "ajku7894@gmail.com",
-      "userPass": "Ajith@123"
-    },
-    {
-      "id": "a2ef",
-      "userName": "Ajith Kumar",
-      "userContact": "9380410103",
-      "userId": "ajku7894@gmail.com",
-      "userPass": "Ajith@123"
-    },
-    {
-      "id": "362e",
-      "userName": "Ajith Kumar",
-      "userContact": "9380410103",
-      "userId": "ajku7894@gmail.com",
-      "userPass": "Ajith@123"
+      "id": "8761",
+      "userName": "Queen",
+      "userContact": "9874561231",
+      "userId": "queen@gmail.com",
+      "userPass": "queen@123",
+      "cartItems": []
     }
   ],
   "cartItems": [

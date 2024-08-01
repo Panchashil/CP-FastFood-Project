@@ -16,6 +16,12 @@ import AddFoodItems from "../Menu/AddFoodItems"
 import About from "../LandingPage/About";
 import LandingComp from "../LandingPage/LandingComp";
 import PageNotFound from '../LandingPage/PageNotFound'
+// import Front from "../LandingPage/Front";
+// import ViewCart from "../Menu/ViewCart";
+import { CartProvider } from '../Menu/CartContext'; // Adjust the path if necessary
+import Cart from "../Menu/Cart";
+
+
 
 const router = createBrowserRouter([
     
@@ -27,6 +33,11 @@ const router = createBrowserRouter([
     // children:[
     //     {path:"MenuContainer",element:<MenuContainer />},
     // ]},
+
+    
+    // {path:"viewcart",element:<ViewCart/>},
+    {path:"cartprovider",element:<CartProvider/>},
+    {path:"listcart",element:<Cart />},
 
     {path:"",element:<LandingComp />},
     {path:"Registration",element:<RegistrationComp />},
@@ -53,6 +64,7 @@ const router = createBrowserRouter([
     {path:"finalpage",element:<FinalPageComp />},
     {path:"addFood",element:<AddFoodItems />},
     {path:"addFood/:id",element:<AddFoodItems />},
+    // {path:"front",element:<Front/>},
     
 
     {path:"productAdd",element:<ProductAddComp />},

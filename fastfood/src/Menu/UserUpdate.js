@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
-import '../Css/UserUpdate.css';
+import './UserUpdate.css';
 
 const UserUpdate = () => {
     const { id } = useParams();

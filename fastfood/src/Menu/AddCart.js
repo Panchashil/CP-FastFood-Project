@@ -1,21 +1,20 @@
-// AddCart.js
-import { Button } from "@mui/material";
-import axios from "axios";
 import React, { useEffect, useState, useContext } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { AppContext } from './AppContext';
-import Box from '@mui/material/Box';
+import { Link, useParams } from "react-router-dom"; // Importing useParams from react-router-dom
 import Typography from '@mui/material/Typography';
-import '../Css/AddCart.css';
+import axios from "axios";
+import { AppContext } from './AppContext';
+import './AddCart.css';
 
 const AddCart = () => {
-  const { selectedMenuId, addToCart } = useContext(AppContext);
-  const { id } = useParams();
-  const navigate = useNavigate();
+  const { selectedMenuId, addToCart,setCartItems,user,SetUser,status,setStatus ,cartItems} = useContext(AppContext); // Assuming addToCart function is available in context
+  const { id } = useParams(); // Using useParams to get the id parameter from the URL
+  console.log (sessionStorage.getItem("userId"))
   const [itemData, setItemData] = useState({
     foodName: "",
     foodItems: [],
   });
+  
+  
 
   useEffect(() => {
     if (selectedMenuId) {
@@ -27,8 +26,14 @@ const AddCart = () => {
         .catch((error) => {
           console.error("Error fetching data:", error);
         });
+
     }
+  
+   
   }, [selectedMenuId]);
+  useEffect(()=>{
+    setStatus(true)
+  },[])
 
   if (!itemData.foodItems.length) {
     return <div>Loading...</div>;
@@ -40,9 +45,13 @@ const AddCart = () => {
     return <div>Item not found</div>;
   }
 
-  const handleAddToCart = () => {
-    addToCart(foodItem);
-    navigate("/cart"); // Redirect to cart page after adding the item
+  const handleAddToCart = (item) => {
+    // addToCart(foodItem); // Assuming addToCart adds the item to the cart in context
+    addToCart(item)
+  
+
+
+    alert('Item added to cart!');
   };
 
   return (
@@ -60,14 +69,14 @@ const AddCart = () => {
           <Typography variant="body1" color="textSecondary" component="div">
             {foodItem.fdesc}
           </Typography>
-          <br /> <br /> <br /> <br />
+          <Typography variant="h6" component="div">
+            {foodItem.price}
+          </Typography>
           <div className="add-cart-card-actions">
-            <Typography variant="h6" component="div">
-              {foodItem.price}
-            </Typography>
-
             <Link to="/finalpage" className='btn'>BUY NOW</Link>
-            <Link to="/MenuContainer" className='btn'>ADD ITEMS</Link>
+            <button onClick={()=>handleAddToCart(foodItem)} className='btn'>ADD ITEMS</button>
+            <Link to="/listcart" className='btn'>Checkout</Link>
+            <Link to="/MenuContainer" className='btn'>Bact to menu</Link>
           </div>
         </div>
       </div>

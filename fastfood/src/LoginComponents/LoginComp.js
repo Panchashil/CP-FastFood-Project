@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../Css/LoginComp.css'; // Import your CSS file
+import { AppContext } from '../Menu/AppContext';
 
 function Copyright(props) {
     return (
@@ -35,7 +36,12 @@ const LoginComp = () => {
     const navigate = useNavigate();
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
+    const { status,setStatus } = useContext(AppContext); // Assuming addToCart function is available in context
 
+useEffect(()=>{
+sessionStorage.clear()
+setStatus(false)
+},[])
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
@@ -63,6 +69,8 @@ const LoginComp = () => {
                 if (data.length > 0) {
                     navigate("/mydashboard");
                     sessionStorage.setItem("user", email);
+                    console.log(data)
+                    sessionStorage.setItem("userId",data[0].id)
                 } else {
                     window.alert("Wrong credentials entered");
                     email = "";
