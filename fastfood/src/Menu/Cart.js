@@ -1,45 +1,3 @@
-// // Cart.js
-// import React, { useContext } from "react";
-// import { AppContext } from './AppContext';
-// import { Link } from "react-router-dom";
-// import Typography from '@mui/material/Typography';
-// import './Cart.css';
-
-// const Cart = () => {
-//   const { cartItems, clearCart } = useContext(AppContext);
-
-//   if (!cartItems.length) {
-//     return <div>Your cart is empty.</div>;
-//   }
-
-//   return (
-//     <div className="cart-container">
-//       {cartItems.map((item, index) => (
-//         <div key={index} className="cart-item-card">
-//           <img className="cart-item-image" src={item.image} alt={item.fname} />
-//           <div className="cart-item-content">
-//             <Typography variant="h5" component="div">
-//               {item.fname}
-//             </Typography>
-//             <Typography variant="body1" color="textSecondary" component="div">
-//               {item.fdesc}
-//             </Typography>
-//             <Typography variant="h6" component="div">
-//               {item.price}
-//             </Typography>
-//           </div>
-//         </div>
-//       ))}
-//       <div className="cart-actions">
-//         <button onClick={clearCart} className='btn'>Clear Cart</button>
-//         <Link to="/finalpage" className='btn'>Proceed to Checkout</Link>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Cart;
-
 import { IconButton } from '@mui/material';
 import { Edit, Delete } from '@mui/icons-material';
 import axios from 'axios';
@@ -117,52 +75,6 @@ const Cart = () => {
     </div>
 
 
-//         <div className="admin-container">
-//             {sessionStorage.getItem("user") == "admin@gmail.com"
-//         ?
-//             <div>
-//             <table className="table table-hover table-striped">
-//                 <thead>
-//                     <tr>
-//                         <th>id</th>
-//                         <th>image</th>
-//                         <th>fname</th>
-//                         <th>fdesc</th>
-//                         <th>price</th>
-//                         <th>Actions</th>
-//                     </tr>
-//                 </thead>
-//                 <tbody>
-//                     {itemData.map((val, index) => (
-//                         <tr key={val.id}>
-//                             <td>{index + 1}</td>
-//                             <td>{val.image}</td>
-//                             <td>{val.fname}</td>
-//                             <td>{val.fdesc}</td>
-//                             <td>{val.price}</td>
-//                             <td>
-//                                 <Link to={`/UserUpdate/${val.id}`}>
-//                                     <IconButton aria-label="edit" size="small">
-//                                         <Edit fontSize="small" />
-//                                     </IconButton>
-//                                 </Link>
-//                                 <IconButton
-//                                     aria-label="delete"
-//                                     size="small"
-//                                     onClick={() => handleDelete(val.id)}
-//                                 >
-//                                     <Delete fontSize="small" />
-//                                 </IconButton>
-//                             </td>
-//                         </tr>
-//                     ))}
-//                 </tbody>
-//             </table>
-//             </div> : <p></p>
-// }
-
-
-//         </div>
     );
 };
 
